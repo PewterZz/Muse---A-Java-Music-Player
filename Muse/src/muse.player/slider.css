@@ -1,0 +1,14 @@
+.slider {
+    /* default track color: */
+    -slider-filled-track-color: #FFA500 ;
+    -slider-track-color: -slider-filled-track-color ;
+}
+
+/* Make thumb same color as filled part of track */
+.slider .thumb {
+    -fx-background-color: #C0C0C0 ;
+}
+
+.slider .track {
+    -fx-background-color: -slider-track-color ;
+}
