@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="654.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TitledPane animated="false" collapsible="false" expanded="false" layoutY="399.0" prefHeight="30.0" prefWidth="654.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+         <font>
+            <Font name="Consolas" size="12.800000190734863" />
+         </font>
+      </TitledPane>
+      <ImageView fx:id="songImage1" fitHeight="382.0" fitWidth="655.0" layoutY="20.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/water.png" />
+         </image>
+      </ImageView>
+      <TitledPane animated="false" collapsible="false" expanded="false" layoutX="6.0" layoutY="336.0" prefHeight="46.0" prefWidth="642.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+         <font>
+            <Font name="Consolas" size="12.800000190734863" />
+         </font>
+      </TitledPane>
+      <Label fx:id="songLabel" layoutX="43.0" layoutY="185.0" prefHeight="70.0" prefWidth="557.0" text="Album" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="23.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="songProgressBar" layoutX="36.0" layoutY="340.0" prefHeight="18.0" prefWidth="580.0" progress="0.0" />
+      <Button fx:id="playButton" layoutX="41.0" layoutY="369.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="46.0" prefWidth="85.0" text="PLAY">
+         <font>
+            <Font name="Dubai Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="pauseButton" layoutX="126.0" layoutY="369.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="46.0" prefWidth="85.0" text="PAUSE">
+         <font>
+            <Font name="Dubai Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="startButton" layoutX="211.0" layoutY="369.0" mnemonicParsing="false" onAction="#startMedia" prefHeight="46.0" prefWidth="85.0" text="START">
+         <font>
+            <Font name="Dubai Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousButton" layoutX="376.0" layoutY="369.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="46.0" prefWidth="130.0" text="PREVIOUS">
+         <font>
+            <Font name="Footlight MT Light" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextButton" layoutX="497.0" layoutY="369.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="46.0" prefWidth="118.0" text="NEXT">
+         <font>
+            <Font name="Footlight MT Light" size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="speedBox" layoutX="497.0" layoutY="21.0" onAction="#changeSpeed" prefHeight="27.0" prefWidth="150.0" promptText="PLAYBACK SPEED" />
+      <Slider fx:id="volumeSlider" layoutX="558.0" layoutY="70.0" max="100.0" orientation="VERTICAL" prefHeight="205.0" prefWidth="150.0" value="50.0" />
+      <Label fx:id="songLabel1" layoutX="43.0" layoutY="220.0" prefHeight="70.0" prefWidth="580.0" text="Artist" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="songLabel2" layoutX="43.0" layoutY="255.0" prefHeight="70.0" prefWidth="580.0" text="Song Name" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="23.0" />
+         </font>
+      </Label>
+      <TitledPane animated="false" collapsible="false" expanded="false" layoutY="-1.0" prefHeight="30.0" prefWidth="654.0" text="Muse Music Player">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+         <font>
+            <Font name="Consolas" size="12.800000190734863" />
+         </font>
+      </TitledPane>
+      <Label id="startLabel" fx:id="startLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="340.0" prefHeight="18.0" prefWidth="40.0" text="0:00" />
+      <Label id="endLabel" fx:id="endLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="612.0" layoutY="340.0" prefHeight="18.0" prefWidth="40.0" text="0:00" />
+      <ImageView fx:id="songImage" fitHeight="169.0" fitWidth="178.0" layoutX="43.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="songImage1" fitHeight="169.0" fitWidth="178.0" layoutX="43.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
