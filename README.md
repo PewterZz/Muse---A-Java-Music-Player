@@ -4,4 +4,4 @@ Video Demo: https://drive.google.com/file/d/1OAsiXc7gNBKUFYfwIs_qI4F-U36nPkm-/vi
 Documentation is included in the MusePlayer Folder.  
 Pictures of running program:  
 ![](exm1.PNG)
-![alt text](https://github.com/PewterZz/Muse---A-Java-Music-Player/exp2.PNG?raw=true)
+![alt text](exp2.PNG)
